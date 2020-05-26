@@ -1,0 +1,40 @@
+<html>
+<body>
+    <h3>Loan Prediction Form</h3>
+
+<div>
+  <form action="/result" method="POST">
+    <label for="total_rec_prncp">Principal received to date</label>
+    <input type="text" id="total_rec_prncp" name="total_rec_prncp">
+    <label for="total_pymnt">Total payment Received to date</label>
+    <input type="text" id="total_pymnt" name="total_pymnt">
+    <br>
+    <label for="total_pymnt_inv">Total payment funded by investors </label>
+    <input type="text" id="total_pymnt_inv" name="total_pymnt_inv">
+    <br>
+    <label for="funded_amnt_inv">Total amount committed by investors</label>
+    <input type="text" id="funded_amnt_inv" name="funded_amnt_inv">
+    <br>
+    <label for="funded_amnt">Total amount committed by investors</label>
+    <input type="text" id="funded_amnt" name="funded_amnt">
+    <br>
+    <label for="loan_amnt">Loan Amount</label>
+    <input type="text" id="loan_amnt" name="loan_amnt">
+    <br>
+    <label for="installment">Installment</label>
+    <input type="text" id="installment" name="installment">
+    <br>
+    <label for="total_rec_int">Interest received to date</label>
+    <input type="text" id="total_rec_int" name="total_rec_int">
+    <br>
+    <label for="int_rate">Interest rate on loan </label>
+    <input type="text" id="int_rate" name="int_rate">
+    <br>
+    <label for="out_prncp_inv">Remaining outstanding principal funded by investors </label>
+    <input type="text" id="out_prncp_inv" name="out_prncp_inv">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
