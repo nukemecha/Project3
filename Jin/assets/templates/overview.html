@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Loan Club</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+<!-- Bootstrap core CSS -->
+<link href="/static/dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Favicons -->
+<!-- <link rel="shortcut icon" type="image/x-icon" href="http://www.thelostromance.com/wp-content/uploads/2017/06/cropped-The-Lost-Romance-Favicon.png" -->
+<link rel="loan_club_icon" type="image/x-icon" href="/static/images/favicons/LoanClub.PNG" sizes="25x25">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/dist/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">Loan Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/overview">Overview <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dataset">Dataset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/preprocess">Data Process </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ML">Machine Learning </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/predictions">Predictions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/members" >Members</a>
+        </li>
+      </ul>
+       
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" data-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/overview/woman-1733891_1920.jpg" class="d-block w-100" alt="...">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-Center">
+            <h1>Overview</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-12"><BR>
+        <h2 class="featurette-heading">Objective<span class="text-muted"></span></h2><BR>
+        <p>In the project, we analyzed the 2011 lending club loan information to predict future loan approval possibility by creating a machine learning model on categorical data.</p> 
+        <p>We analyzed the correlation between different categorical data and loan status, for example, the loan amount, interest rate, annual income. The prediction app is to predict if the applicant could qualify for the loan. </p>
+      </div><!-- /.col-lg-4 -->
+      
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Programming Languages and Libraries <span class="text-muted"></span></h2>
+        <br>
+        <p>In the project, we have cooperated the below programming languages and libraries to clean dataset, create visualizations, analyze data, create machine learning model, build and deploy build web-applications.</p>
+      </div>
+      <div class="col-md-12">        
+<!---- table-->
+        
+<!-- Programing language -->
+        <h2> Programming Languages</h2>
+        <style>
+          table {
+            table-layout:fixed;
+            width:100%;
+            margin: 0 0 2em 0;
+          }
+          table tbody tr {
+            border: solid 1px #dee1e3;
+            border-left: 0;
+            border-right: 0;
+          }
+
+          table tbody tr:nth-child(2n + 1) {
+            background-color: rgba(144, 144, 144, 0.075);
+          }
+
+          table td {
+            padding: 0.75em 0.75em;
+          }
+
+          table th {
+                color: #727a82;
+                font-size: 0.9em;
+                font-weight: 700;
+                padding: 0 0.75em 0.75em 0.75em;
+                text-align: left;
+              }
+
+          table thead {
+			      border-bottom: solid 2px #dee1e3;
+		        }
+        </style>
+        <table>
+          <thead>
+            <tr>
+              <th><h4>Name</h4></th>
+              <th><h4>Description</h4></th>
+              <th><h4>Purpose</h4></th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td>Excel</td>
+                <td>Local data source as CSV file</td>
+                <td>Backend</td>
+              </tr>
+              <tr>
+                <td>Jupyter Notebook</td>
+                <td>Data preparation and visualization</td>
+                <td>Backend</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Data cleaning and analysis</td>
+                <td>Backend</td>
+              </tr>
+              <tr>
+                <td>Colab</td>
+                <td>Develop deep learning applications</td>
+                <td>Backend</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Webpage programming</td>
+                <td>Frontend</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Webpage formatting</td>
+                <td>Frontend</td>
+              </tr>
+              <tr>
+                <td>Tableau</td>
+                <td>Data visualization</td>
+                <td>Frontend</td>
+              </tr>
+              <tr>
+                <td>Heroku</td>
+				        <td>Application deployment</td>
+				        <td>Frontend</td>
+              </tr>
+            </tbody>
+          </table>
+        <!-- Library --><br><br>
+        <h2>Libraries</h2>
+          <table>
+            <thead>
+              <tr>
+                <th><h4>Name</h4></th>
+                <th><h4>Description</h4></th>
+                <th><h4>Supports</h4></th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>Pandas</td>
+                  <td>Data analysis and manipulation</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Matplotlib</td>
+                  <td>Data visualization</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Seaborn</td>
+                  <td>Data visualization</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Numpy</td>
+                  <td>High-level mathematical functions for large and multi-dimensional arrays</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Scikit-learn</td>
+                  <td>Machine learning</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Pycaret</td>
+                  <td>Machine learning</td>
+                  <td>Python</td>
+                </tr>
+                <tr>
+                  <td>Bootstrap</td>
+                  <td>frontend web development</td>
+                  <td>HTML, CSS, JS</td>
+                </tr>
+                <tr>
+                  <td>Flask</td>
+                  <td>Web framework</td>
+                  <td>Python, HTML</td>
+                </tr>
+              </tbody>
+            </table>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+  <br>
+  <br>
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; SMU Data Science Bootcampt - Group 3 <a href="#"></a><a href="#"></a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/static/dist/js/bootstrap.bundle.js"></script></body>
+</html>
+    
