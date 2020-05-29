@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Loan Club</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+<!-- Bootstrap core CSS -->
+<link href="/static/dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Favicons -->
+<!-- <link rel="shortcut icon" type="image/x-icon" href="http://www.thelostromance.com/wp-content/uploads/2017/06/cropped-The-Lost-Romance-Favicon.png" -->
+<link rel="loan_club_icon" type="image/x-icon" href="/static/images/favicons/LoanClub.PNG" sizes="25x25">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/dist/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">Loan Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/overview">Overview <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dataset">Dataset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/preprocess">Data Process </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ML">Machine Learning </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/predictions">Predictions </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/members" >Members</a>
+        </li>
+      </ul>
+       
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       
+        <img src="/static/images/preprocess/hexagon-3420935_1920.jpg" class="d-block w-100" alt="...">
+        
+        
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <!-- <div class="container">
+          <div class="carousel-caption text-bottom">
+            <h1>Data Pre-Processing.</h1>
+            <!-- <p class="red">Data pre-processing is one of the most important steps in machine learning. It helps in building machine learning models more accurately.
+              In machine learning, there is an 80/20 rule.  <br> Every data scientist should spend 80% time for data pre-processing and 20% time to actually perform the analysis (1).</p> -->
+          </div>
+        </div> 
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Data Pre-Processing</h1>
+        <p>“Data pre-processing is one of the most important steps in machine learning. It helps in building machine learning models more accurately. In machine learning, there is an 80/20 rule.
+          Every data scientist should spend 80% time for data pre-processing and 20% time to actually perform the analysis.” (1)
+          </p>
+      </div>
+    </div>
+    <!-- Three columns of text below the carousel -->
+    
+
+    <!-- START THE FEATURETTES -->
+
+<!--- pre-process flow----->
+<hr class="featurette-divider">
+    
+<div class="row featurette">
+  <div class="col-md-12">
+    <h2 class="featurette-heading">Pre-processing Data Process Flow.<span class="text-muted"></span></h2>
+    <p class="lead">The data flow diagram (DFD) illustrates the data gathering process and selection.</p>
+    
+  </div>
+  <div class="col-md-12">
+      <img src="/static/images/preprocess/Process Flow Preprocess.svg"  class="d-block w-100" alt="process flow">    
+  </div>
+</div>
+<!---end process flow-->
+
+<!-- 1 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Correlation Matrix <span class="text-muted"></span></h2>
+        <p class="lead">The first visualization generated is a correlation matrix. The correlation matrix gives us an overview of correlations between factors within our data. </p>
+      </div>
+      <div class="col-md-12">
+          <img src="/static/images/preprocess/correlation_matrix.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+<!-- 2 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Good and Bad Loan . <span class="text-muted"></span></h2>
+        <p class="lead">The main goal of the project is to identify factors that contribute to a loan being successfully paid in full. 
+          The good loans and bad loans were sorted in order to compare the loan status against other factors.<br><br>
+          The pie charts on the left show that longer term loans have a higher percent of bad loans.
+          This information guides to a further exploration into how the term of a loan impacts the likelihood of the loan being paid off.
+          </p>
+      </div>
+    
+      <div class="row featurette">  
+        <div class="col-md-12 order-md-2">
+          <img src="/static/images/preprocess/pie_good_bad_loan36months.png" class="d-block w-100" alt="..."> </div>
+      </div>
+      <div class="row featurette">  
+        <div class="col-md-12 order-md-2">
+          <img src="/static/images/preprocess/pie_good_bad_loan60months.png" class="d-block w-100" alt="..."> </div>
+      </div>
+    </div>
+<!-- 3 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Loan Status by Loan Amount. <span class="text-muted"></span></h2>
+        <p class="lead">The visualizations below show the breakout of the average loan amount and interest rate of the loans by the status of the loan. <br> 
+          The data is also broken out to show the term of the loan. This offers a better understanding of the pie charts above by showing that shorter term loan amounts and interest rates are, on average, lower than longer term loan. 
+          Both of these factors most likely contribute to a higher percentage of short term loans being paid off.</p>
+      </div>
+      <div class="col-md-8">
+        <img src="/static/images/preprocess/loan_status.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+<!-- 4 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Loan Amount and Interest Rate by Status. <span class="text-muted"></span></h2>
+        <p class="lead">This visualization display the average and data distribution of the loan amounts and interest rate. 
+          </p>
+      </div>
+      <div class="col-md-8">
+        <img src="/static/images/preprocess/loan_purpose.png" class="d-block w-100" alt="..."> </div>
+    </div>
+<!-- 5 -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Loan Amount by purpose. <span class="text-muted"></span></h2>
+        <p class="lead">Looking on how the purpose impacts the amount of the loan, and whether or not the loan is good or bad. 
+          It looks like loans that are awarded in large amounts are more difficult for borrowers to repay. Specifically,
+           it appears that housing and small business loans are less successfully paid off than loans awarded for other purposes. </p>
+      </div>
+      <div class="col-md-8">
+        <img src="/static/images/preprocess/loan_amount_by_purpose.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+<!-- 6 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Loan Amount Applied vs Funded. <span class="text-muted"></span></h2>
+        <p class="lead">This visualization shows a comparison of the distribution of the amount applied for by the borrower and the amount awarded to the borrower. 
+          Both of these distributions are the same, which means that if a qualified borrower applies for a loan, they will most likely receive the amount they applied for in full.
+          </p>
+      </div>
+      <div class="col-md-8">
+        <img src="/static/images/preprocess/loan_application_amount.png" class="d-block w-100" alt="..."> </div>
+    </div>
+<!-- 7 -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12">
+        <h2 class="featurette-heading">Good and Bad Loan Distribution by States. <span class="text-muted"></span></h2><br>
+        <p class="lead"></p>
+      </div>
+      
+    </div>
+<!-----Tableau_Map---->
+<!-- Good Loan Percentage -->
+
+<div class='tableauPlaceholder' id='viz1590461575436' style='position: relative'>
+  <noscript>
+    <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Tableau_15904598108600&#47;GoodLoanPct&#47;1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz'  style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+    <param name='embed_code_version' value='3' /> 
+    <param name='site_root' value='' />
+    <param name='name' value='Tableau_15904598108600&#47;GoodLoanPct' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Tableau_15904598108600&#47;GoodLoanPct&#47;1.png' /> 
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+  </object>
+</div>                
+  <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1590461575436');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+  
+
+
+<!-- Bad Loan Percentage by State -->
+<div class='tableauPlaceholder' id='viz1590461836584' style='position: relative'>
+  <noscript>
+    <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Tableau_15904598108600&#47;BadLoanPct&#47;1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz'  style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+    <param name='embed_code_version' value='3' /> 
+    <param name='site_root' value='' />
+    <param name='name' value='Tableau_15904598108600&#47;BadLoanPct' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Tableau_15904598108600&#47;BadLoanPct&#47;1.png' /> 
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+  </object>
+</div>                
+  <script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1590461836584');                   
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+  </script>
+  
+<!-----End_Tableau_Map---->
+
+<!--- ML-process flow----->
+<hr class="featurette-divider">
+    
+<div class="row featurette">
+  <div class="col-md-12">
+    <h2 class="featurette-heading">Machine Learning Data Process Flow.<span class="text-muted"></span></h2>
+    <p class="lead">This data flow diagram ilustrate how the data is processing to obtain the best model. And the Final User Interphase.
+    
+  </div>
+  <div class="col-md-12">
+    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+    <img src="/static/images/preprocess/Process_Flow_ML.svg" class="d-block w-100" alt="process flow">    
+  </div>
+</div>
+<!---end-ML-process flow-->
+
+<!-----Reference---->
+<hr class="featurette-divider">
+<div class="row featurette">
+<div class="col-md-12">
+  <h2 class="featurette-heading"> <span class="text-muted"></span></h2>
+  <p class="float-left"> (1) Reference: https://towardsdatascience.com/workflow-of-a-machine-learning-project-ec1dba419b94</p>
+</div>
+</div>
+<p class="float-left"><a href="#"></a></p><br>
+<hr class="featurette-divider">
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+
+<!-- FOOTER -->
+
+<footer class="container">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>&copy; SMU Data Science Bootcamp - Group 3 <a href="#"></a><a href="#"></a></p>
+</footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/static/dist/js/bootstrap.bundle.js"></script></body>
+</html>
+    
+
