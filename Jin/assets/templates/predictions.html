@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Loan Club</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+<!-- Bootstrap core CSS -->
+<link href="/static/dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Favicons -->
+<!-- <link rel="shortcut icon" type="image/x-icon" href="http://www.thelostromance.com/wp-content/uploads/2017/06/cropped-The-Lost-Romance-Favicon.png" -->
+<link rel="loan_club_icon" type="image/x-icon" href="/static/images/favicons/LoanClub.PNG" sizes="25x25">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/dist/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">Loan Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/overview">Overview <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dataset">Dataset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/preprocess">Data Process </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ML">Machine Learning </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/predictions">Predictions </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/members" >Members</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/prediction/prediction1.png" class="d-block w-100" alt="...">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <!-- <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Loan Prediction Form</h1>
+          </div>
+        </div> -->
+      </div>    
+    </div>
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <br>
+  
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Loan Prediction Form</h1>
+      </div>
+    </div>
+    {{pred}}
+    <style>
+      body { 
+      width: 100%;
+      height:100%;
+      background: #9ca7b8;
+      color: #fff;
+      text-align:center;
+      background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+      background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+      background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+      background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(105, 186, 221, 0.4) 10%,rgba(175, 144, 95, 0) 40%), -webkit-linear-gradient(top,  rgba(88, 169, 201, 0.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#1e4e9b 100%);
+      background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(127, 200, 231, 0.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(81, 170, 206, 0.25) 0%, rgba(94, 134, 194, 0.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #5f81b8 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+    } 
+    </style>
+    <form action="{{ url_for('predict')}}"method="POST">
+      <!-- <form action="/predictions" method="POST"> -->
+        <br>
+        <br>
+        <label for="total_loan_amt">Total Loan Amount</label>
+        <input type="text" id="total_loan_amt" name="total_loan_amt">
+        <br>
+        <label for="total_term">Total Term</label>
+        <input type="text" id="total_term" name="total_term">
+        <br>
+        <label for="int_rate">Interest Rate</label>
+        <input type="text" id="int_rate" name="int_rate">
+        <br>
+        <label for="installment">Installment</label>
+        <input type="text" id="installment" name="installment">
+        <br>
+        <label for="grade">The grade of the Loan</label>
+        <input type="text" id="grade" name="grade">
+        <br>
+        <label for="dti">Debt to Income Ratio</label>
+        <input type="text" id="dti" name="dti">
+        <br>
+        <label for="delinq_2yrs">Delinquency in Past 2 years</label>
+        <input type="text" id="delinq_2yrs" name="delinq_2yrs">
+        <br>
+        <label for="inq_last_6mths">Inquires in Past 6 Months</label>
+        <input type="text" id="inq_last_6mths" name="inq_last_6mths">
+        <br>
+        <label for="open_acc">Number of Open Trades </label>
+        <input type="text" id="open_acc" name="open_acc">
+        <br>
+        <label for="pub_rec">Number of Derogatory Public Records </label>
+        <input type="text" id="pub_rec" name="pub_rec">
+        <br>
+        <label for="revol_util">Revolving Line Utilization Rate </label>
+        <input type="text" id="revol_util" name="revol_util">
+        <br>
+        <label for="total_acc">Total Number of Credit Lines </label>
+        <input type="text" id="total_acc" name="total_acc">
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+    </form>
+  </div><!-- /.container -->
+ 
+  <br>
+  <br>
+  </body>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; SMU Data Science Bootcamp - Group 3 <a href="#"></a><a href="#"></a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/static/dist/js/bootstrap.bundle.js"></script></body>
+</html>
+    
+
